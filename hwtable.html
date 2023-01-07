@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <style> table,tr,th,td {
+        border:solid 1px;
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <thead>
+<!--rowspan and colspan is used to spread it in req no. of col or row-->
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>                           
+            </tr>
+
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+    
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2" bgcolor="yellow">8:00am</td>
+                <td rowspan="2" bgcolor="blueviolet">5:00pm</td>
+                <td align="center">Introduction to XML</td>
+        </tr>
+
+        <tr>
+            <td >Validity:DTD and Relax NG</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td   bgcolor="yellow">8:00am</td>
+            <td  bgcolor="yellow">11:00am</td>
+            <td rowspan="2" align="center">XPath</td>
+        </tr>
+
+        <tr>
+            <td  bgcolor="yellow" >11:00am</td>
+            <td  bgcolor="green">2:00pm</td>
+            
+        </tr>
+
+
+        <tr>
+             <td bgcolor="green">2:00pm</td>
+            <td  bgcolor="blueviolet">5:00pm</td>
+            <td  align="center">XSL Transformations</td>
+        </tr>
+
+        <tr>
+            <td >Wednesday</td>
+            <td  bgcolor="yellow">8:00am</td>
+            <td  bgcolor="green" >12:00pm</td>
+            <td align="center">XSL Formatting Objects</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <table>
+        <colgroup>
+        <col span="1" >
+        <col span="1" style="background-color: aqua;">
+        <col span="1" style="background-color: aqua;">
+        <col span="1" style="visibility:collapse"> <!--to hide a colulmn -->
+    </colgroup>
+    <tr><td rowspan="2">State of health</td>
+        <td colspan="2">fasting values</td>
+        <td>after eating</td>
+        </tr>
+
+        <tr><td>minimum</td>
+            <td>maximum</td>
+            
+            <td>2hr after eating</td></tr>
+
+        <tr><td>healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>less than 140</td></tr>
+
+        <tr><td>pre-diab</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td></tr>
+
+        <tr> <td>Diabetes</td>
+            <td>more than 126</td>
+            <td>NA</td>
+            <td>more than 200</td>
+            </tr>
+
+    </table>
+</body>
+</html>
